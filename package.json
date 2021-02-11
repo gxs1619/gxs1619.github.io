@@ -8,7 +8,14 @@
     "@testing-library/user-event": "^12.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-feather": "^2.0.9",
+    "react-hamburger-menu": "^1.2.1",
+    "react-loading": "^2.0.3",
+    "react-reveal": "^1.2.2",
     "react-scripts": "4.0.1",
+    "react-tsparticles": "^1.18.11",
+    "redux": "^4.0.5",
+    "video-react": "^0.14.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -34,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-social-icons": "^4.1.0"
   }
 }

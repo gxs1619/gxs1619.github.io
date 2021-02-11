@@ -1,25 +1,72 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {Component} from "react";
+import Loading from "./loading.js";
+import Particles from "react-tsparticles";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <div style={{position: 'absolute', backgroundColor: 'transparent'}}>
+                    <a  id="home"/>
+                    <Particles
+                        height="500vh"
+                        width="100vw"
+                        id="tsparticles"
+                        options={{
+                            "particles": {
+                                "color": {
+                                    "value": "#00FF00",
+                                },
+                                "number": {
+                                    "value": 80,
+                                    "density": {
+                                        "enable": true,
+                                        "value_area": 1500
+                                    }
+                                },
+                                "line_linked": {
+                                    "enable": true,
+                                    "opacity": 0.02
+                                },
+                                "move": {
+                                    "direction": "right",
+                                    "speed": 0.05
+                                },
+                                "size": {
+                                    "value": 1
+                                },
+                                "opacity": {
+                                    "anim": {
+                                        "enable": true,
+                                        "speed": 1,
+                                        "opacity_min": 0.05
+                                    }
+                                }
+                            },
+                            "interactivity": {
+                                "events": {
+                                    "onclick": {
+                                        "enable": true,
+                                        "mode": "push"
+                                    }
+                                },
+                                "modes": {
+                                    "push": {
+                                        "particles_nb": 1
+                                    }
+                                }
+                            },
+                            "retina_detect": true
+                        }}
+                    />
+                </div>
+                <div className="loadingWrapper">
+                    <Loading />
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
