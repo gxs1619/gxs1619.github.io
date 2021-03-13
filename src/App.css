@@ -41,7 +41,7 @@
   flex-direction: row;
   display: flex;
   color: aliceblue;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 .navWrapperDesktop {
@@ -166,6 +166,10 @@ a {
   padding-left: 5vw;
   padding-right: 5vw;
   font-size: 2vh;
+}
+
+.knowledgeable {
+  width: 345px;
 }
 
 .list-group-item {

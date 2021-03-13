@@ -125,7 +125,6 @@ export default class Loading extends React.Component {
                 ) : (
                     <div>
                         <header className="App-header">
-
                             <div className="helloText" style={{alignItems: "baseline", lineHeight: "0vw"}}>
                                 <Jump>
                                     <h1 style={{
@@ -229,7 +228,7 @@ export default class Loading extends React.Component {
                                         </Fade>
                                         <Fade right>
                                             <div className="skillsArea">
-                                                <div>
+                                                <div className="knowledgeable">
                                                     <h1>
                                                         Knowledgeable in
                                                     </h1>
