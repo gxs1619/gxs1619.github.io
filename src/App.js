@@ -10,7 +10,7 @@ class App extends Component {
                 <div style={{position: 'absolute', backgroundColor: 'transparent'}}>
                     <a  id="home"/>
                     <Particles
-                        height="500vh"
+                        height="450vh"
                         width="100vw"
                         id="tsparticles"
                         options={{
@@ -19,7 +19,7 @@ class App extends Component {
                                     "value": "#00FF00",
                                 },
                                 "number": {
-                                    "value": 80,
+                                    "value": 90,
                                     "density": {
                                         "enable": true,
                                         "value_area": 1500
@@ -27,11 +27,11 @@ class App extends Component {
                                 },
                                 "line_linked": {
                                     "enable": true,
-                                    "opacity": 0.02
+                                    "opacity": 0.2
                                 },
                                 "move": {
                                     "direction": "right",
-                                    "speed": 0.05
+                                    "speed": 0.3
                                 },
                                 "size": {
                                     "value": 1

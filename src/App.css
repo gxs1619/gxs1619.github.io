@@ -86,13 +86,14 @@ a {
 .helloText {
   flex-direction: row;
   display: flex;
-  margin-top: 15vh;
+  margin-top: 5vw;
 }
 
 .makeText {
   flex-direction: row;
   display: flex;
   position: relative;
+  font-size: 2vw;
 }
 
 .navWrapperMobile {
@@ -100,7 +101,7 @@ a {
 }
 
 .aboutText {
-  padding-top: 10vh;
+  padding-top: 5vh;
   width: 100%;
   text-align: center;
   align-items: center;
@@ -125,93 +126,47 @@ a {
 }
 
 .connectContent {
+  font-weight: lighter;
+  font-size: 2.2vw;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1.5px;
   border-color: #00FF00;
   border-radius: 10px;
-  background-color: #00FF00;
-  color: #121417;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-top: 0.5vw;
-  padding-bottom: 0.5vw;
+  background-color: #00ff00;
+  color: black;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 .experienceWrapper {
-  padding-top: 40vh;
-  padding-bottom: 50vh;
+  padding-top: 50vh;
   position: relative;
-}
-
-.experienceLinkContainer {
-  padding-bottom: 10vw;
-}
-
-.experienceContent {
   display: flex;
   flex-direction: column;
 }
 
-.experienceBox {
+.experienceContainer {
   display: flex;
   flex-direction: row;
-  position: relative;
 }
 
-.experienceNav {
-  position: relative;
+.techStackArea {
+  text-align: left;
+  line-height: 3vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  font-size: 2vh;
 }
 
-.experienceNav ul{
-  list-style: none;
+.skillsArea {
+  line-height: 3vh;
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-size: 2vh;
 }
-.experienceNav::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-.experienceNav::-webkit-scrollbar-thumb {
-  background: #00ff00;
-  border-radius: 2px;
-}
-.experienceNav::-webkit-scrollbar-thumb:hover{
-  background: #14ff18;
-}
-.experienceNav::-webkit-scrollbar-track{
-  background: #121417;
-  border-radius: 15px;
-}
-
-#experienceList {
-
-  justify-content: left;
-}
-.experienceContainermindex {
-  display: flex;
-  width: 40vw;
-} ul {
-    text-align: left;
-  }
-
-.experienceContainertranscat {
-  display: none;
-  width: 40vw;
-} ul {
-    text-align: left;
-  }
-
-.experienceContainerhalcyon {
-  display: none;
-  width: 40vw;
-} ul {
-    text-align: left;
-  }
-
-.experienceContainerseibold {
-  display: none;
-  width: 40vw;
-} ul {
-    text-align: left;
-  }
 
 .list-group-item {
   width: 100%;
@@ -219,8 +174,7 @@ a {
 
 .castlyTxt {
   padding-top: 10vh;
-  padding-bottom: 10vh;
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
 .list-group-item-btn {
@@ -250,8 +204,10 @@ a {
 }
 
 .contactForm {
-  color: #121417;
+  color: #F9F9F9;
   width: 80vw;
+  position:relative;
+  display: flex;
 }
 
 .form-container {
@@ -262,7 +218,8 @@ a {
 }
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 #contact {
-  background:#F9F9F9;
+  background:transparent;
+  color: #F9F9F9;
   padding:25px;
   margin:15px 0;
 }
@@ -270,6 +227,7 @@ a {
   display: block;
   font-size: 30px;
   font-weight: 400;
+  color: #00ff00;
 }
 #contact h4 {
   margin:5px 0 15px;
@@ -283,10 +241,18 @@ fieldset {
   padding: 0;
   width: 100%;
 }
+#contact {
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+}
 #contact input[type="text"], #contact input[type="email"], #contact textarea {
   width:100%;
-  border:1px solid #CCC;
-  background:#FFF;
+  color: #F9F9F9;
+  border:1px solid darkgrey;
+  border-radius: 10px;
+  background:transparent;
   margin:0 0 5px;
   padding: 5px;
 }
@@ -300,7 +266,8 @@ fieldset {
 #contact textarea {
   height:100px;
   max-width:100%;
-  resize:none;
+  resize: both;
+  color: #F9F9F9;
 }
 
 #contact button[type="submit"] {
@@ -308,11 +275,12 @@ fieldset {
   width:100%;
   border:none;
   background:#00ff00;
-  color: #121417;
-  margin:0 0 5px;
+  border-radius: 10px;
+  color: black;
   padding:10px;
   font-size:15px;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 #contact button[type="submit"]:hover {
@@ -322,7 +290,7 @@ fieldset {
   transition:background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px #F9F9F9; }
 
 #contact input:focus, #contact textarea:focus {
   outline:0;
@@ -340,11 +308,11 @@ fieldset {
 }
 
 .castlyImg {
-  padding-bottom: 10vh;
+  padding-bottom: 1vh;
 }
 
 .castlyDesc {
-  width: 40vw;
+  width: 50vw;
 }
 .castlyVid {
   width: 50vw;
@@ -353,6 +321,10 @@ fieldset {
 .footer-wrapper {
   position: relative;
   padding-bottom: 5vh;
+}
+
+.experienceLinkContainer {
+  margin-bottom: 2vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -373,7 +345,7 @@ fieldset {
   .navWrapperMobile {
     display: flex;
     flex-direction: column;
-    padding-top: 20%;
+    padding-top: 1vh;
   }
   .nav-wrapper {
     display: flex;
@@ -413,35 +385,8 @@ fieldset {
     z-index: -1;
   }
 
-  .experienceBox {
-    display: flex;
-    flex-direction: column;
-  }
-  .experienceNav {
-    padding-bottom: 2vh;
-  }
-
-  .experienceNav ul{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    overflow: auto;
-    width: 60vw;
-  }
-  #experienceList {
-    justify-content: center;
-  }
-  .experienceContainermindex {
-    width: 60vw;
-  } ul {
-      text-align: center;
-    }
-
-  .list-group-item-btn {
-    width: 21vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    text-align: center;
+  .helloText {
+    margin-top: 20vw;
   }
 
   .castlyImg {
@@ -458,6 +403,13 @@ fieldset {
 
   .contactForm {
     width: 80vw;
+  }
+  .experienceContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .skillsArea {
+    padding-top: 10vh;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -476,6 +428,9 @@ fieldset {
   #buns {
     display: none;
   }
+  .helloText {
+    margin-top: 15vw;
+  }
 }
 
 @media only screen and (min-width: 1568px) {
@@ -493,5 +448,8 @@ fieldset {
 
   .navDesktopContactWrapper {
     font-size: 1.25vw;
+  }
+  .helloText {
+    margin-top: 5vw;
   }
 }
